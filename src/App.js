@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import ThemeProviderDemo from './components/ThemeProviderDemo'
+import ErrorComponts from './components/ErrorComponts'
+import TempWrap from './components/TempWrap'
+
 
 const Wrapper = styled.div`
   padding: 25px 25px;
@@ -10,8 +12,9 @@ const Wrapper = styled.div`
 export default function App() {
   return (
     <Wrapper>
-      <ThemeProviderDemo/>
-      
+      <ErrorComponts>
+        <TempWrap/>
+        </ErrorComponts>
     </Wrapper>
   )
 }
